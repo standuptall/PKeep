@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PKeep.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout 
+                VerticalOptions="CenterAndExpand" Padding="20"  >
+                <Label FontSize="30">Login</Label>
+                <StackLayout >
+                    <Label FontSize="20" Text="Nome utente"/>
+                    <Entry Text="{Binding nomeutente}"></Entry>
+                </StackLayout>
+                <StackLayout>
+                    <Label FontSize="20"  Text="Password"/>
+                    <Entry Text="{Binding password}" IsPassword="True"></Entry>
+                </StackLayout>
+                <StackLayout>
+                    <Button Text="Accedi" Clicked="Button_Clicked"></Button>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

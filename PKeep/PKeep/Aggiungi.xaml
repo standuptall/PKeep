@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PKeep.Aggiungi">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Nome"></Label>
+                <Entry  Text="{Binding nome}"></Entry>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Descrizione"></Label>
+                <Entry Text="{Binding descrizione}"></Entry>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Nome utente"></Label>
+                <Entry Text="{Binding nomeutente}"></Entry>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Password"></Label>
+                <Entry Text="{Binding password}"></Entry>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="End">
+                <!-- bottom controls -->
+                <Button Clicked="Salva_Clicked" Margin="40" Text="Salva"  CornerRadius="10" FontSize="20"  WidthRequest="200" x:Name="Salva" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

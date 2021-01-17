@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="PKeep.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <StackLayout>
+                <Label Text="Password Keeper by AlbertoZ " HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+            </StackLayout>
+
+
+        </Frame>
+        <Grid HeightRequest="100">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button BackgroundColor="Transparent" BorderColor="LightGray" CornerRadius="100" Margin="5" BorderWidth="1" ImageSource="abc_textfield_search_material" HorizontalOptions="Start"></Button>
+            <Entry HorizontalOptions="Fill" x:Name="searchBar"  Grid.Column="1" TextChanged="searchBar_TextChanged"></Entry>
+        </Grid>
+        <BoxView HeightRequest="1" WidthRequest="1" BackgroundColor="LightGray"/>
+
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout VerticalOptions="CenterAndExpand">              
+                <ListView x:Name="mainList" ItemTapped="mainList_ItemTapped"  >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Margin="10">
+                                    <Label FontSize="Medium" Text="{Binding nome}" FontAttributes="Bold"   />
+                                    <Label FontSize="Medium" Grid.Column="1" Text="{Binding nomeutente}" />
+                                    
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+                </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="End">
+                <!-- bottom controls -->
+                <Button  Clicked="SetKey_Clicked" Margin="40" Text="Set Key"  CornerRadius="40" FontSize="10"  WidthRequest="60" x:Name="SetKey" HorizontalOptions="StartAndExpand" />
+                <!-- bottom controls -->
+                <Button Clicked="RevealCode_Clicked" Margin="40" Text="+"  CornerRadius="40" FontSize="30"  WidthRequest="60" x:Name="RevealCode" HorizontalOptions="EndAndExpand" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
