@@ -8,7 +8,7 @@ namespace PKeep
     {
         public static string BaseUrl { get
             {
-                return "http://cantirsi.altervista.org/FantaApp";
+                return "https://cantirsi.altervista.org/FantaApp";
             }
         }
     }

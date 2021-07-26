@@ -22,7 +22,9 @@
             </StackLayout>
             <StackLayout Orientation="Horizontal" VerticalOptions="End">
                 <!-- bottom controls -->
-                <Button Clicked="Salva_Clicked" Margin="40" Text="Salva"  CornerRadius="10" FontSize="20"  WidthRequest="200" x:Name="Salva" HorizontalOptions="CenterAndExpand" />
+                <Button Clicked="Salva_Clicked" Margin="10" Text="Salva"  CornerRadius="10" FontSize="20"  WidthRequest="100" x:Name="Salva" HorizontalOptions="CenterAndExpand" />
+                <Button Clicked="Copia_Clicked" Margin="10" Text="Copia"  CornerRadius="10" FontSize="20"  WidthRequest="100" x:Name="Copia" HorizontalOptions="CenterAndExpand" />
+                <Button Clicked="Cast_Clicked" Margin="10" Text="Cast"  CornerRadius="10" FontSize="20"  WidthRequest="100" x:Name="Cast" HorizontalOptions="CenterAndExpand" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

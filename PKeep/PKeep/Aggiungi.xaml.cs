@@ -12,7 +12,7 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -78,7 +78,7 @@ namespace PKeep
         new AuthenticationHeaderValue("Bearer", Application.Current.Properties["token"].ToString());
                         var content = new StringContent(JsonConvert.SerializeObject(item));
 
-                        var res = http.PostAsync(Settings.BaseUrl + "/FantaApp/api/password", content).Result;
+                        var res = http.PostAsync(Settings.BaseUrl + "/api/password", content).Result;
                         var str = res.Content.ReadAsStringAsync().Result;
                         if (res.IsSuccessStatusCode)
                         {
@@ -100,7 +100,7 @@ namespace PKeep
         new AuthenticationHeaderValue("Bearer", Application.Current.Properties["token"].ToString());
                         var content = new StringContent(JsonConvert.SerializeObject(item));
 
-                        var res = http.PutAsync(Settings.BaseUrl + "/FantaApp/api/password/" + item.ID, content).Result;
+                        var res = http.PutAsync(Settings.BaseUrl + "/api/password/" + item.ID, content).Result;
                         if (res.IsSuccessStatusCode)
                         {
                             Toast.MakeText(Android.App.Application.Context, "Password salvata correttamente", ToastLength.Long).Show();
@@ -113,7 +113,7 @@ namespace PKeep
                     }
                 }
             }
-            catch
+            catch(Exception ex)
             {
                 Toast.MakeText(Android.App.Application.Context, "Si è verificato un errore durante il salvataggio", ToastLength.Long).Show();
             }
@@ -252,6 +252,42 @@ namespace PKeep
             }
 
             return plaintext;
+        }
+
+        private async void Copia_Clicked(object sender, EventArgs e)
+        {
+            await Clipboard.SetTextAsync(this.item.password);
+            Toast.MakeText(Android.App.Application.Context, "Copiato!", ToastLength.Long).Show();
+        }
+
+        private void Cast_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                var obj = new { name = item.nome, pass = item.password };
+                using (var http = new HttpClient())
+                {
+                    http.DefaultRequestHeaders.Authorization =
+    new AuthenticationHeaderValue("Bearer", Application.Current.Properties["token"].ToString());
+                    var content = new StringContent(JsonConvert.SerializeObject(obj));
+
+                    var res = http.PostAsync(Settings.BaseUrl + "/api/cast/", content).Result;
+                    var str = res.Content.ReadAsStringAsync().Result;
+                    if (res.IsSuccessStatusCode)
+                    {
+                        Toast.MakeText(Android.App.Application.Context, "Password castata", ToastLength.Long).Show();
+                    }
+                    else
+                    {
+                        Toast.MakeText(Android.App.Application.Context, "Si è verificato un errore", ToastLength.Long).Show();
+                    }
+
+                }
+            }
+            catch(Exception ex)
+            {
+                Toast.MakeText(Android.App.Application.Context, "Si è verificato un errore generico", ToastLength.Long).Show();
+            }
         }
     }
 }
