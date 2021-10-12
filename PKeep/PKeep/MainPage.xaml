@@ -43,6 +43,8 @@
                 <!-- bottom controls -->
                 <Button  Clicked="SetKey_Clicked" Margin="40" Text="Set Key"  CornerRadius="40" FontSize="10"  WidthRequest="60" x:Name="SetKey" HorizontalOptions="StartAndExpand" />
                 <!-- bottom controls -->
+                <Button  Clicked="Fuel_Clicked" Margin="40" Text="F"  CornerRadius="40" FontSize="10"  WidthRequest="60" x:Name="Fuel" HorizontalOptions="StartAndExpand" />
+                <!-- bottom controls -->
                 <Button Clicked="RevealCode_Clicked" Margin="40" Text="+"  CornerRadius="40" FontSize="30"  WidthRequest="60" x:Name="RevealCode" HorizontalOptions="EndAndExpand" />
             </StackLayout>
         </StackLayout>

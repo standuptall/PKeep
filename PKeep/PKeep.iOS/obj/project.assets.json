@@ -1052,24 +1052,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\azich\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\AZichittel\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\azich\\source\\repos\\PKeep\\PKeep\\PKeep.iOS\\PKeep.iOS.csproj",
+      "projectUniqueName": "C:\\Progetti\\Personali\\PKeep\\PKeep\\PKeep.iOS\\PKeep.iOS.csproj",
       "projectName": "PKeep.iOS",
-      "projectPath": "C:\\Users\\azich\\source\\repos\\PKeep\\PKeep\\PKeep.iOS\\PKeep.iOS.csproj",
-      "packagesPath": "C:\\Users\\azich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\azich\\source\\repos\\PKeep\\PKeep\\PKeep.iOS\\obj\\",
+      "projectPath": "C:\\Progetti\\Personali\\PKeep\\PKeep\\PKeep.iOS\\PKeep.iOS.csproj",
+      "packagesPath": "C:\\Users\\AZichittel\\.nuget\\packages\\",
+      "outputPath": "C:\\Progetti\\Personali\\PKeep\\PKeep\\PKeep.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\azich\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AZichittel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1083,8 +1083,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\azich\\source\\repos\\PKeep\\PKeep\\PKeep\\PKeep.csproj": {
-              "projectPath": "C:\\Users\\azich\\source\\repos\\PKeep\\PKeep\\PKeep\\PKeep.csproj"
+            "C:\\Progetti\\Personali\\PKeep\\PKeep\\PKeep\\PKeep.csproj": {
+              "projectPath": "C:\\Progetti\\Personali\\PKeep\\PKeep\\PKeep\\PKeep.csproj"
             }
           }
         }

@@ -4,4 +4,13 @@
 	<application android:label="PKeep.Android" android:theme="@style/MainTheme" android:icon="@mipmap/launcher_foreground"></application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<application >
+		<service android:name=".ServiceDefault">
+			<intent-filter>
+				<action android:name="12345" />
+			</intent-filter>
+		</service>
+	</application>
 </manifest>

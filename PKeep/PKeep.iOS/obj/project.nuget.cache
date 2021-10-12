@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "oPqvfHT3DI+ZtQN0++IZ5g6fDENxzj4hTnrblYFwodpAvbcWM83Pgett4dd23v2fkmHaTUByAFN88BbISBIdkQ==",
+  "dgSpecHash": "PQa+YMjs7+Q97Itsvr4ZRZKOuOT2aSphfpuAqshIjlPUgw/SLE76RhgvRx0i1pa6XxQQBOq3Lu9fwNxYGJajvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\azich\\source\\repos\\PKeep\\PKeep\\PKeep.iOS\\PKeep.iOS.csproj",
+  "projectFilePath": "C:\\Progetti\\Personali\\PKeep\\PKeep\\PKeep.iOS\\PKeep.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\azich\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+    "C:\\Users\\AZichittel\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\AZichittel\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\AZichittel\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
   ],
   "logs": []
 }
